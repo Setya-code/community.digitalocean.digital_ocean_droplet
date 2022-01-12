@@ -225,3 +225,36 @@ integer
 120
 	
 How long before wait gives up, in seconds, when creating a Droplet.
+
+Return Values
+
+Common return values are documented here, the following are the fields unique to this module:
+Key 	Returned 	Description
+assign_status
+string
+	changed 	
+Assignment status (ok, not_found, assigned, already_assigned, service_down)
+
+Sample:
+assigned
+data
+dictionary
+	changed 	
+a DigitalOcean Droplet
+
+Sample:
+{'droplet': {'backup_ids': [], 'created_at': '2014-11-14T16:36:31Z', 'disk': 20, 'features': ['virtio'], 'id': 3164494, 'image': {}, 'kernel': {'id': 2233, 'name': 'Ubuntu 14.04 x64 vmlinuz-3.13.0-37-generic', 'version': '3.13.0-37-generic'}, 'locked': True, 'memory': 512, 'name': 'example.com', 'networks': {}, 'region': {}, 'size': {}, 'size_slug': '512mb', 'snapshot_ids': [], 'status': 'new', 'tags': ['web'], 'vcpus': 1, 'volume_ids': []}, 'ip_address': '104.248.118.172', 'ipv6_address': '2604:a880:400:d1::90a:6001', 'private_ipv4_address': '10.136.122.141'}
+msg
+string
+	changed 	
+Informational or error message encountered during execution
+
+Sample:
+No project named test2 found
+resources
+dictionary
+	changed 	
+Resource assignment involved in project assignment
+
+Sample:
+{'assigned_at': '2021-10-25T17:39:38Z', 'links': {'self': 'https://api.digitalocean.com/v2/droplets/3164494'}, 'status': 'assigned', 'urn': 'do:droplet:3164494'}
