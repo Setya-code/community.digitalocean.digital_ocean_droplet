@@ -1,7 +1,7 @@
 # community.digitalocean.digital_ocean_droplet
 Create and delete a DigitalOcean droplet
 
-Create and delete a DigitalOcean droplet
+Create and delete a DigitalOcean droplet
 
 Note
 
@@ -21,11 +21,13 @@ To use it in a playbook, specify: community.digitalocean.digital_ocean_droplet.
 
     Return Values
 
-Synopsis
+
+Synopsis:
 
     Create and delete a droplet in DigitalOcean and optionally wait for it to be active.
 
-Parameters
+
+Parameters:
 Parameter 	Choices/Defaults 	Comments
 backups
 boolean
